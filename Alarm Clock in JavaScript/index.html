@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alarm Clock in JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="./files/clock.svg" alt="clock">
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Add Alarm</button>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALARM CLOCK</title>
+</head>
+<body>
+  <main>
+    <h1>Alarm clock</h1>
+    <p class="timer"></p>
+    <!-- adding inputs-->
+    <form action="">
+      <div class="input-box">
+       <!--input for hours-->
+       <input
+       type="number"
+       max="12"
+       id="hours"
+       required value="00"/>
+       <!--input for minutes-->
+       <input 
+       type="number"
+       max="59"
+       min="0"
+       id="minutes"
+       required value ="00"/>
+       <!-- input for seconds-->
+       <input 
+       type="number"
+       max="59"
+       min="0"
+       id="minutes"
+       required value ="00"/>
+       <!--input of zone-->
+       <select id ="zone" name ="timezone">
+        <option value="am">am</option>
+        <option value="pm">pm</option>
+       </select>
+      </div>
+      <div class="button-container">
+        <button type ="submit" id ="setAlarm">SET ALARM</button>
+        <button type="button" id ="stop">stop</button>
+      </div>
+    </form>
+    <!--containers for rendering alarm-->
+    <h1>Alarms</h1>
+    <div class ="container"></div>
+  </main>
+  <!--Icon file-->
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<!-- link of index.js file -->
+<script src="./index.js"></script>
+</body>
+</html>  
+</body>
+</html>
