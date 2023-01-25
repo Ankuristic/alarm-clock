@@ -13,7 +13,6 @@ const audio = new Audio(
 );
 audio.loop = true;
 audio.load();
-// creating functions
 // display current time to users
 function displayTime() {
   const now = new Date()
@@ -43,7 +42,7 @@ function createAlarm() {
   const zoneTime = zone.value;
   if (parseInt(hrs) > 24 || parseInt(min) > 59 || parseInt(sec) > 59) {
     alert(
-      "Please enter a valid time for setting up an alarm. Hourse should not be greater than 12 and minutes and seconds should not be greater that 59"
+      "Please enter a valid time for setting up an alarm. Hours should not be greater than 12 and minutes and seconds should not be greater that 59"
     );
     return;
   }

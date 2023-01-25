@@ -14,9 +14,10 @@
     <!-- Alarm clock div -->
     <main>
       <h1>Alarm Clock</h1>
+      <img  class="img" src="assets/clock.png" alt="clock">
+
       <!-- to show the current time -->
       <p class="timer"></p>
-      <!-- adding inputs -->
       <form action="">
         <div class="input-box">
           <!-- input for hours -->
@@ -48,8 +49,8 @@
           />
           <!-- input of zone -->
           <select id="zone" name="timeZone">
-            <option value="am">am</option>
-            <option value="pm">pm</option>
+            <option value="am">AM</option>
+            <option value="pm">PM</option>
           </select>
         </div>
         <!-- buttons -->
@@ -58,20 +59,11 @@
           <button type="button" id="stop">Stop</button>
         </div>
       </form>
+
       <!-- containers for rendering alarms -->
       <h1>Alarms</h1>
       <div class="container"></div>
     </main>
-    <!-- Ion Icons file -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- link of index.js file -->
     <script src="script.js"></script>
   </body>
 </html>
